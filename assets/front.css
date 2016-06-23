@@ -1,7 +1,7 @@
-/*body{
-	background-color: #ffcc99;
+body{
+	background-color: #CE7233;
 }
-*/
+
 
 /*******Jumbotron mods**********/
 .jumbotron {
@@ -92,4 +92,17 @@ button#makeMyDay.btn.btn-primary { /*For Button input*/
     border-radius: 5px;
 }
 
+button.btn.btn-default {
+	color: #ff9;
+	background-color: #CE7233;
+	border-color: #ffcc99;
+	/*position: relative;
+	left: 5px;
+	top: 10px;*/
+}
+
+a.dropdown-toggle.glyphicon {
+	z-index:;
+	display: hidden; 
+}
 /*required=""*/
