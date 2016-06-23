@@ -1,0 +1,95 @@
+/*body{
+	background-color: #ffcc99;
+}
+*/
+
+/*******Jumbotron mods**********/
+.jumbotron {
+	color: #ffcc99;
+	height: 400px;
+	/*margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom:0px;*/
+    background-image:url('images/jumbotronTravel.jpg');
+    background-size: cover;
+    background: contain;
+    
+}
+
+/*******Jumbotron HEader Mods********/
+#headerContainer {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-align: left;
+	margin-left: 30px;
+	color: #ffcc99;
+	background-color: rgba(45, 45, 45, 0.6);
+	display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+/***Brand Name & Dropdown font-color***/
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+	color: #ffcc99;
+}
+
+/*********Hover color of Brand & DropDown************/
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+	color: #ff9;
+}
+
+/*****Navbar Background Color*******/
+#deNav {
+	background-color: rgba(45, 45, 45, 0.6);
+}
+
+/********Changes Navbar button color when opened**********/
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+	background-color: #ffcc99;
+}
+
+img{
+/*	width: 150px;*/
+	max-width: 100%;
+}
+
+/******Functionality for Dropdown Window*****/
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    height: 350px;
+    width: 500px;
+    /*border-top-right-radius: 0;*/
+}
+
+/**********Created Spacing for Form inputs***************/
+input#name.form-control.input-md, /*For Name input*/
+input#email.form-control.input-md, /*For Email input*/
+/*input#buttondropdown.form-control, /*For Name input*/
+/*.btn btn-default dropdown-toggle,
+.btn btn-default dropdown-toggle*/
+input#date.form-control.input-md,  /*For Date input*/
+button#makeMyDay.btn.btn-primary { /*For Button input*/
+	margin-bottom: 20px;
+    margin-left: -45px;
+}
+
+/******'Click' Dropdown Menu within Nav*********/
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+	margin-bottom: 20px;
+    margin-left: 40px;
+    width: 219px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/*required=""*/

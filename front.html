@@ -6,21 +6,131 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!--Lazy Loader Button-->
+			<link rel="stylesheet" href="jquery-activmap/css/jquery-activmap.css">
+			<script src="jquery-lazyloader/js/lazyloader.js"></script>
+		<!--Lazy Loader/ -->		
+		<script type="text/javascript" src="assets/front.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="assets/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/front.css">
 	</head>
 	<body>
+
+	<nav class="navbar navbar-default" id="deNav">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expandeds="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar">stuff</span>
+	        <span class="icon-bar">stuff</span>
+	        <span class="icon-bar">stuff</span>
+	      </button>
+	      <p class="navbar-brand">On the <br />Road Again</p>
+	    </div>
+	    
+	    
+
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search Here! </span></a>
+	          <ul class="dropdown-menu" id="dropdown-menu-expand">
+	            <li><!-- Name/ Text Input-->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="name">Name</label>  
+					  <div class="col-md-6">
+					  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
+					  </div>
+					</div>
+				</li>
+	            <li>
+	            	<!-- Email / Text Input-->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="email">Email</label>  
+					  <div class="col-md-6">
+					  <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md">
+					  </div>
+					</div>
+	            </li>
+	            
+	            <li>
+	            	<!-- Date / Text input-->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="date">Date</label>  
+					  <div class="col-md-6">
+					  <input id="date" name="date" type="text" placeholder="Date" class="form-control input-md">
+					    
+					  </div>
+					</div>
+	            </li>
+	            <li role="separator" class="divider"></li>
+	            
+	            <li>
+					<!-- Mileage / Button Drop Down -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="buttondropdown">Mileage</label>
+					  <div class="col-md-4">
+					    <div class="input-group">
+					      
+					      <div class="input-group-btn">
+					        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					          Click
+					        </button>
+					        <ul class="dropdown-menu pull-right">
+					          <li><a href="#">25 Miles</a></li>
+					          <li><a href="#">50 Miles</a></li>
+					          <li><a href="#">75 Miles</a></li>
+					          <li><a href="#">100 Miles</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					</div>         	
+	            </li>
+
+	            <li>
+	            	<!-- makeMyDay / Button -->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="makeMyDay">Search Here!</label>
+					  <div class="col-md-6">
+					    	<button id="makeMyDay" name="makeMyDay" class="btn btn-primary">Make My Day</button>
+					  </div>
+					</div>
+	            </li>
+
+	          </ul>
+	        </li>
+	      </ul>
+
+	      <!--******Search bar hidden************-->
+
+	     <!--  <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button> -->
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
 		<!-- JumboTron-->
 		<div class="jumbotron">
-	    <h1 class="header">On the Road Again</h1>
-	    <p class="header">For the Random Day Tripper!</p>
+		<div id="headerContainer">
+		    <h1 class="header">On the Road Again</h1>
+		    <p class="header">For the Random Day Tripper!</p>
+		</div>   
 	    <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
 	    </div>
 
 	    <!-- https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg -->
 
-
+	    <!-------------Cards Are Here------------------>
 		<div class="card-columns">
 	  <div class="card">
 	    <img class="card-img-top" data-src="https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg" src="https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg" alt="Card image cap">
@@ -40,7 +150,24 @@
 	    </blockquote>
 	  </div>
 	  <div class="card">
-	    <img class="card-img-top" data-src="https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg" src="https://pixabay.com/static/uploads/photo/2013/07/24/03/33/road-166543_960_720.jpg" alt="Card image cap">
+	    <img class="card-img-top" data-src="https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg" src="https://pixabay.com/static/uploads/photo/2015/07/12/23/47/adventure-842584_960_720.jpg" alt="Card image cap">
+	    <div class="card-block">
+	      <h4 class="card-title">Card title that wraps to a new line</h4>
+	      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+	    </div>
+	  </div>
+	  <div class="card card-block">
+	    <blockquote class="card-blockquote">
+	      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+	      <footer>
+	        <small class="text-muted">
+	          Someone famous in <cite title="Source Title">Source Title</cite>
+	        </small>
+	      </footer>
+	    </blockquote>
+	  </div>
+	  <div class="card">
+	    <img class="card-img-top" id="randomize-img" data-src="https://pixabay.com/static/uploads/photo/2016/03/27/21/35/sea-1284354_960_720.jpg" src="https://pixabay.com/static/uploads/photo/2013/07/24/03/33/road-166543_960_720.jpg" alt="Card image cap">
 	    <div class="card-block">
 	      <h4 class="card-title">Card title</h4>
 	      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -81,6 +208,23 @@
 	    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 	  </div>
 </div>
+
+	<!-- Lazy Loader Button-------http://lazyloader.pandao.eu/doc/ -->
+	<div class="lazy-wrapper">
+		<form class="form-horizontal">
+			<fieldset>
+			<!-- Button -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="lazyLoaderButton"></label>
+			  <div class="col-md-4">
+			    <button id="lazyLoaderButton" name="lazyLoaderButton" class="btn btn-primary">Load Page</button>
+			  </div>
+			</div>
+
+			</fieldset>
+		</form>
+
+	</div>
 		
 	</body>
 </html>	
