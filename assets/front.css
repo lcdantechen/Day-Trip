@@ -26,16 +26,28 @@
 }
 
 .navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand,
+ {
 	color: #ffcc99;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
 	color: #ff9;
 }
 
 #deNav {
 	background-color: rgba(45, 45, 45, 0.6);
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover {
+	background-color: #ffcc99;
 }
 
 img{
@@ -46,7 +58,17 @@ img{
 
 .navbar-nav>li>.dropdown-menu {
     margin-top: 0;
-    border-top-left-radius: 0;
+    /*border-top-left-radius: 0;*/
+    height: 350px;
     width: 500px;
-    border-top-right-radius: 0;
+    /*border-top-right-radius: 0;*/
+}
+
+input#name.form-control.input-md,
+input#email.form-control.input-md,
+input#mileage.form-control.input-md,
+input#date.form-control.input-md,
+button#makeMyDay.btn.btn-primary {
+	margin-bottom: 20px;
+    margin-left: -45px;
 }
